@@ -9,7 +9,6 @@ example
 -------
 
 ```js
-
 var redux = require('reduxer')
 
 var counter = redux((state=0, chunk) => {
@@ -33,7 +32,6 @@ counter.write('INCREMENT')
 // 2
 counter.write('DECREMENT')
 // 1
-
 ```
 
 install
@@ -48,16 +46,16 @@ api
 
 `redux([options,] fn)`
 
-Create a Redux *instance*. Options default to `{ objectMode: true }`
+Create a Redux *instance*. `options` parameter defaults to `{ objectMode: true }`.
 
 `redux.ctor([options,] fn)`
 
-Create a Redux *class*
+Create a Redux *class*.
 
 options
 -------
 
-  * all through2 options
+  * all through2 options and an optional initial `state` object
 
 attribution
 -------
