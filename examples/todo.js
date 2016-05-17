@@ -16,9 +16,6 @@ todo.on('data', (data) =>
   console.log(data)
 )
 
-todo.write('add todo 0')
-// ['todo 0']
-todo.write('add todo 1')
-// ['todo 0', 'todo 1']
+todo.write('add do dishes')
+todo.write('add pick up the milk')
 todo.write('remove 0')
-// ['todo 1']

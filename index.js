@@ -35,7 +35,7 @@ function proxy () {
     var i = chunk.indexOf(' ')
     var name = chunk.slice(0, i)
     var args = JSON.parse(chunk.slice(i+1))
-    args = [state, ...args]
+    args = [state].concat(args)
     return this.fns[name].apply(this, args)
   }))
 }
