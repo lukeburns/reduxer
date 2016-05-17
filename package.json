@@ -1,0 +1,25 @@
+{
+  "name": "reduxer",
+  "version": "0.1.0",
+  "description": "Redux for streams",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lukeburns/reduxer.git"
+  },
+  "keywords": [
+    "streams",
+    "through",
+    "through2",
+    "redux"
+  ],
+  "author": "Luke Burns",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukeburns/reduxer/issues"
+  },
+  "dependencies": {
+    "through2": "~2.0.0"
+  },
+  "homepage": "https://github.com/lukeburns/reduxer"
+}
