@@ -5,9 +5,14 @@ Reduxer
 
 `reduxer` is a stream that works like `redux`.
 
+Install
+-------
+
+`npm install reduxer`
+
 ```js
 
-var redux = require("./")
+var redux = require("reduxer")
 
 var counter = redux((data, state=0) => {
   switch (data) {
