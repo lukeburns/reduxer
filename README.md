@@ -3,7 +3,7 @@ reduxer
 
 [![NPM](https://nodei.co/npm/reduxer.png)](https://nodei.co/npm/reduxer/)
 
-`reduxer` is a stream that works like `redux`.
+reduxer is a stream api that works like [redux](http://redux.js.org/).
 
 example
 -------
@@ -62,4 +62,4 @@ options
 attribution
 -------
 
-Thanks to @brycebaril. Borrowed from `through2-reduce`.
+Thanks to [brycebaril](https://github.com/brycebaril). Borrowed from [through2-reduce](https://github.com/brycebaril/through2-reduce).
