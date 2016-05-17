@@ -1,14 +1,16 @@
-Reduxer
+reduxer
 ===============
 
 [![NPM](https://nodei.co/npm/reduxer.png)](https://nodei.co/npm/reduxer/)
 
 `reduxer` is a stream that works like `redux`.
 
-Install
+example
 -------
 
-`npm install reduxer`
+```
+npm install reduxer
+```
 
 ```js
 
@@ -38,7 +40,7 @@ counter.write('DECREMENT')
 
 ```
 
-API
+api
 ----
 
 `redux([options,] fn)`
@@ -49,12 +51,12 @@ Create a Redux *instance*. Options default to `{ objectMode: true }`
 
 Create a Redux *class*
 
-Options
+options
 -------
 
   * all through2 options
 
-ATTRIBUTION
+attribution
 -------
 
 Thanks to @brycebaril. Borrowed from `through2-reduce`.
