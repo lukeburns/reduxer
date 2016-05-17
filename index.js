@@ -4,13 +4,17 @@ module.exports.ctor = ctor
 var through2 = require("through2")
 
 function ctor(options, fn) {
+  if (typeof options == "function") {
+    fn = options
+    options = {}
+  }
   return through2.ctor(options, function (chunk, encoding, callback) {
     try {
-      this.state = fn.call(this, this.state, chunk)
+      options.state = fn.call(this, options.state, chunk)
     } catch (e) {
       var err = e
     }
-    this.push(this.state)
+    this.push(options.state)
     return callback(err)
   })
 }
