@@ -1,4 +1,4 @@
-var redux = require("./")
+var redux = require('../')
 
 var counter = redux((state=0, chunk) => {
   switch (chunk) {

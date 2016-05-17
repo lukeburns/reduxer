@@ -1,4 +1,4 @@
-var redux = require("./")
+var redux = require("../")
 
 var todo = redux((state=[], chunk) => {
   var i = chunk.indexOf(' ')
