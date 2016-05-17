@@ -10,7 +10,7 @@ example
 
 ```js
 
-var redux = require('redux')
+var redux = require('reduxer')
 
 var counter = redux((state=0, chunk) => {
   switch (chunk) {
