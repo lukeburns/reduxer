@@ -8,16 +8,12 @@ reduxer
 example
 -------
 
-```
-npm install reduxer
-```
-
 ```js
 
-var redux = require("reduxer")
+var redux = require('redux')
 
-var counter = redux((data, state=0) => {
-  switch (data) {
+var counter = redux((state=0, chunk) => {
+  switch (chunk) {
   case 'INCREMENT':
     return state + 1
   case 'DECREMENT':
@@ -38,6 +34,13 @@ counter.write('INCREMENT')
 counter.write('DECREMENT')
 // 1
 
+```
+
+install
+-----
+
+```
+npm install reduxer
 ```
 
 api
