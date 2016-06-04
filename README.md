@@ -46,7 +46,11 @@ api
 
 `redux([options,] fn)`
 
-Create a Redux *instance*. `options` parameter defaults to `{ objectMode: true }`.
+Create a Redux *instance*.
+
+`redux.obj([options,] fn)`
+
+Create a Redux *instance* with `{ objectMode: true }`.
 
 `redux.ctor([options,] fn)`
 
