@@ -8,7 +8,7 @@ var isnumber = require('isnumber')
 test('object chunks', function (t) {
   t.plan(1)
 
-  var meaner = redux(function (prev={time: 0, mean: 0}, curr) {
+  var meaner = redux.obj(function (prev={time: 0, mean: 0}, curr) {
     var mean = prev.mean - (prev.mean - curr.mean) / (prev.time + 1)
     prev.mean = mean
     prev.time = curr.time
